@@ -14,4 +14,8 @@ export class TodoListComponent implements OnInit {
   ngOnInit() {
   }
 
+  public onClick(): void {
+    console.log('Clicked!')
+  }
+
 }
