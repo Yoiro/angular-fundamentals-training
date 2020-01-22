@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TodoListComponent implements OnInit {
   public title: string = "Todo List Page";
-  public buttonStatus: boolean = true;
+  public buttonStatus: boolean = false;
 
   constructor() { }
 
@@ -15,7 +15,11 @@ export class TodoListComponent implements OnInit {
   }
 
   public onClick(): void {
-    console.log('Clicked!')
+    console.log("On Click");
+  }
+
+  public onKeyUp(event: any): void {
+    console.log("On KeyUp:", event.target.value);
   }
 
 }

@@ -1,5 +1,5 @@
 <h1>{{title}}</h1>
 
-<input [(ngModel)]="title"/>
+<input (keyup)="onKeyUp($event)" [(ngModel)]="title"/>
 
 <button (click)="onClick()" [disabled]="buttonStatus">Button 1</button>
