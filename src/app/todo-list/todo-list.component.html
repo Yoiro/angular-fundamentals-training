@@ -3,3 +3,5 @@
 <input (keyup)="onKeyUp($event)" [(ngModel)]="title"/>
 
 <button (click)="onClick()" [disabled]="buttonStatus">Button 1</button>
+
+<li *ngFor="let todo of todos"></li>
