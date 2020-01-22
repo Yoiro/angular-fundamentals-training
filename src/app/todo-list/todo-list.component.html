@@ -4,4 +4,6 @@
 
 <button (click)="onClick()" [disabled]="buttonStatus">Button 1</button>
 
-<li *ngFor="let todo of todos"></li>
+<li *ngFor="let todo of todos">
+  {{todo.id}} {{todo.name}} {{todo.done ? 'V' : 'X'}}
+</li>
